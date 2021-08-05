@@ -40,5 +40,5 @@ jobs:
         
       - name: Install Surge
         run: npm install -g surge
-      - name: Run surge
+      - name: Run surge to deploy
         run: surge ./build project002.surge.sh --token ${{sectrets.surge-token}}
