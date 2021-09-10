@@ -33,7 +33,6 @@ jobs:
       - uses: borales/actions-yarn@v2.3.0
         with:
           cmd: install # will run `yarn install` command
-      - uses: borales/actions-yarn@v2.3.0
       
       -  name: build react app
          run: yarn build
