@@ -28,7 +28,10 @@ jobs:
       - name: Install NodeJS
         uses: actions/setup-node@v2-beta
         with: 
-              node-version: 12        
+              node-version: 12       
+
+      - name: granting access for installation           
+        run: npm config set unsafe-perm true
       
       - uses: borales/actions-yarn@v2.3.0
         with:
